@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-6">
+        <div class="mb-3">
+            <label for="num1" class="form-label">Grados</label>
+            <input type="text" [(ngModel)]="gradosC" class="form-control" name="num1" placeholder="Grados">
+        </div>
+        <div class="mb-3">
+            <input type="radio" name="operacion" value="gradosc" [(ngModel)]="calcu"/> Convertir a Fahrenheit<br>
+            <input type="radio" name="operacion" value="gradosf" [(ngModel)]="calcu"/> Convertir a Celsius<br><br>
+
+            <button (click)="centigrados()" class="btn btn-primary">Calcular</button>
+        </div>
+    </div>
+    <div class="col-6">
+        <h2>Resultado: {{resultado}}</h2>
+    </div>
+</div>
+
