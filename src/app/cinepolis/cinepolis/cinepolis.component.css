@@ -1,0 +1,163 @@
+body{
+    background-image: url("https://play-lh.googleusercontent.com/CgQh-QTgOHL0A62swl26oo1UTPBGLLOfCjCZBbCTwTNYaPmkjPCErLK95c6kOJkyExWJ");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.titulo{
+    text-align:center;
+    font-size: 40px;
+    background-color: rgba(203, 171, 212, 0);
+    width: 170px;
+    padding: 0px;
+    margin-left:600px;
+    position: relative;
+    top: 20px;
+    color: rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif;
+}
+
+.entra{
+    margin-left: 100px;
+    margin-top: 37px;
+    width: 85px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+.entradas{
+    position: relative;
+    margin-left: 80px;
+    margin-top: 70px;
+    width: 500px;
+    height: 185px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    padding: 15px;
+    border-top: 0px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+label{
+    margin-bottom: 0px;
+    margin-left: 50px;
+    width: 180px;
+}
+
+.inp{
+    margin-bottom: 15px;
+    margin-left: 100px;
+    align-items:end;
+}
+
+.uno{
+    position: relative;
+    border: 2px solid;
+    box-sizing: border-box;
+    margin: -31px ;
+    width: 56vh;
+    color: white;
+    margin-left: 98px;
+}
+
+.sali{
+    position: relative;
+    margin-left: 57%;
+    margin-top: -150px;
+    width: 400px;
+    height: 120px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    padding: 15px;
+    border-top: 0px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+.letra{
+    margin-top: 33px;
+    z-index: 1;
+    margin-left: 30px;
+    color: white;
+}
+
+.resul{
+    border: 1px solid black;
+    width: 50%;
+    height: 30px;
+    margin-left: 160px;
+    margin-top: -38px;
+    background-color: white;
+}
+
+.salidas{
+    margin-left: 58.5%;
+    margin-top: -165px;
+    width: 85px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+.dos{
+    position: relative;
+    border: 2px solid;
+    box-sizing: border-box;
+    margin: -33px ;
+    width: 42.5vh;
+    color: white;
+    margin-left: 90px;
+}
+
+.acc{
+    margin-left: 3px;
+    margin-top: -30px;
+    width: 85px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+.acciones{
+    position: relative;
+    margin-left: 38%;
+    margin-top: 180px;
+    width: 300px;
+    height: 95px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    padding: 15px;
+    border-top: 0px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.btnUno{
+    width: 80px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.btnDos{
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.tres{
+    position: relative;
+    border: 2px solid;
+    box-sizing: border-box;
+    margin: -33px ;
+    width: 25vh;
+    color: white;
+    margin-left: 110px;
+}

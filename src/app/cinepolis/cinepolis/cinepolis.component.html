@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div class="container">
+  <h1 class="titulo">Cinépolis </h1>
+
+  <div class="entra">
+    <h2>Entradas</h2>
+    <hr class="uno">
+  </div>
+    
+  <div class="entradas">
+    <div class="mat-field" >
+      <mat-label>Nombre</mat-label>
+      <input class="inp" matInput [(ngModel)]="nombre" placeholder="Nombre">
+      
+    </div>
+  
+    <div class="mat-field">
+      <mat-label>Cantidad Compradores</mat-label>
+      <input class="inp" matInput [(ngModel)]="cantidadCompradores" type="number" placeholder="Cantidad Compradores">
+    </div>
+  
+    <div class="mat-field">
+      <mat-label>Tarjeta Cineco</mat-label>
+      <mat-radio-group [(ngModel)]="usarCineco" name="operacion">
+        <mat-radio-button class="inp" value="si">Sí</mat-radio-button>
+        <mat-radio-button value="no">No</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  
+    <div class="mat-field">
+      <mat-label>Cantidad Boletas</mat-label>
+      <input class="inp" matInput [(ngModel)]="cantidadBoletas" type="number" placeholder="Cantidad Boletas">
+    </div>
+  </div>
+</div>
+  
+  <div class="salidas">
+    <h2>Salidas</h2>
+    <hr class="dos">
+  </div>
+  
+  <div class="sali">
+    <p class="letra">Valor a Pagar</p>
+    <div class="resul">  
+      <FONT COLOR="black"> {{ valorAPagar}} </FONT>
+    </div>
+  </div>
+  
+  <div class="acciones">
+    <div class="acc">
+      <h2>Acciones</h2>
+      <hr class="tres">
+    </div>
+    <div>
+      <button class="btnUno" mat-raised-button color="primary" (click)="calcularValor()">Procesar</button>
+      <button class="btnDos" mat-raised-button color="warn" (click)="salir()">Salir</button>
+    </div>
+  </div>
+      </body>
+</html>
