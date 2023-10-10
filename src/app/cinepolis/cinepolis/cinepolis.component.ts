@@ -11,8 +11,8 @@ export class CinepolisComponent {
   usarCineco: string;
   cantidadBoletas: number;
   valorAPagar: number;
-  error:string;
   valorInicial:number;
+  error: string;
 
   
   constructor(){
@@ -21,8 +21,8 @@ export class CinepolisComponent {
     this.usarCineco = ''; 
     this.cantidadBoletas = 0;
     this.valorAPagar = 0;
+    this.valorInicial=12.00;
     this.error='';
-    this.valorInicial=12000;
   }
 
   
@@ -30,15 +30,15 @@ export class CinepolisComponent {
     let boletosTot = this.cantidadCompradores*7;
     if(this.cantidadBoletas<=boletosTot){
 
-      if(this.cantidadBoletas > 5 && this.cantidadBoletas <= 7){
+      if(this.cantidadBoletas > 5){
         this.valorAPagar = (this.cantidadBoletas * this.valorInicial * 0.85);
       }
 
-      else if(this.cantidadBoletas >= 3 && this.cantidadBoletas <= 5){
+      else if(this.cantidadBoletas > 3 && this.cantidadBoletas <= 5){
         this.valorAPagar = (this.cantidadBoletas * this.valorInicial * 0.90);
       }
 
-      else if(this.cantidadBoletas < 3){
+      else if(this.cantidadBoletas <= 3){
         this.valorAPagar = (this.cantidadBoletas * this.valorInicial);
       }
 
@@ -46,9 +46,6 @@ export class CinepolisComponent {
         this.valorAPagar = this.valorAPagar * 0.90;
       }
     }
-    else if(this.cantidadBoletas > boletosTot){
-      this.error =("Error en la compra, no se puede exceder de 7 boletas");
-    }
   }
 
   salir(){
@@ -57,6 +54,5 @@ export class CinepolisComponent {
     this.usarCineco = '';
     this.cantidadBoletas = 0;
     this.valorAPagar = 0;
-    this.error='';
   }
 }
